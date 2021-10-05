@@ -17,22 +17,18 @@ The prices of new cars in the industry is fixed by the manufacturer with some ad
 
   
 
-During the first few weeks of SDAIA Data Science Bootcamp, I've obtained many skills in programming, statistics, and data analytics. I am planning to apply data science methodologies to the available data sources in order to design a solution for the client (MTA Maintenance Department) and help them achieve their main goal which is rescheduling maintenance work to minimize riders delays.
+Our goal in this project is to predict used cars' market value by applying machine learning skills. We intend to use web scraping tools which are BeautifulSoup and Selenium for acquiring data from different websites. after acquiring the data, we are going to apply feature engineering and data cleaning algorithms using Pandas. 
+
+ subsequently, we are planning to build a linear regression model and evaluate that model to help clients in predicting used car's price. the clients of this project are:
 
   
+- Used car sellers (dealers)
 
-I intend to work with SQL Database via Python SQLalchemy, EDA in Pandas, and Python visualization libraries and other tools to answer some questions and to come up with interesting insights such as:
+- Individuals
 
-  
-
-- Understand the impact of elevator outages within the NYC subway system
-
-- Study the effect of rainy days on train ridership in order to schedule cleaning work.
-
-- Finding the overall busiest stations.
+- Online pricing services
 
   
-
 ### Data Sources
 
   
