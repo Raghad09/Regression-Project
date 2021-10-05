@@ -8,6 +8,7 @@
 
 
 Recently, many people are turnout toward buying a used car over a new car in order to save money.  with the increased global demand in used car sales, many companies have launched online marketplaces which serve as a mediator for selling and buying cars.
+
 The prices of new cars in the industry is fixed by the manufacturer with some additional costs incurred by the Government in the form of taxes. but for used cars, it can be stressful for sellers to value their car because the price depends on many factors.  It is important to know the actual market value while both buying and selling. There is a need for a used car price prediction system to effectively determine the worthiness of the car using a variety of features.
 
   
