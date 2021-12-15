@@ -1,21 +1,14 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set()
-from sklearn.datasets import load_boston
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score
 import pickle
 
 #title
 st.title('Used car price prediction')
 list_of_states= ('CA','FL','TX','NY','None of the above')
 state=st.selectbox('Select The state:', list_of_states)
-list_of_manf= ('Acura', 'Alfa', 'Alfa-Romeo','Aston', 'Aston-Martin', 'Audi', 'Bentley', 'Bmw', 'Buick','Cadillac', 'Chevrolet', 'Chrysler', 'm.Datsun', 'm.Dodge',
+list_of_manf= ('Acura', 'Alfa', 'Alfa-Romeo','Aston', 'Aston-Martin', 'Audi', 'Bentley', 'Bmw', 'Buick','Cadillac', 'Chevrolet',
+       'Chrysler', 'm.Datsun', 'm.Dodge',
        'Ferrari', 'Fiat', 'Ford', 'Genesis', 'Gmc','Harley-Davidson', 'Honda', 'Hummer', 'Hyundai', 'Infiniti',
        'Jaguar', 'Jeep', 'Karma', 'Kia', 'Lamborghini', 'Land','Land Rover', 'Lexus', 'Lincoln', 'Maserati', 'Mazda',
        'Mclaren', 'Mercedes-Benz', 'Mercury', 'Mini', 'Mitsubishi','Morgan', 'Nissan', 'Not specified', 'Pontiac', 'Porsche',
@@ -23,11 +16,11 @@ list_of_manf= ('Acura', 'Alfa', 'Alfa-Romeo','Aston', 'Aston-Martin', 'Audi', 'B
        'Volvo')
 manf = st.selectbox('Select The Manufacturer of your car:',list_of_manf )
 #tr
-list_of_tran= ('t.Automatic', 't.CVT','t.Manual')
+list_of_tran= ('Automatic', 'CVT','Manual')
 Transmission= st.selectbox('Select The type of transmission on your car:', list_of_tran)
 #feul
-list_of_feul= ('fuel.Diesel', 'fuel.Electric', 'fuel.Flexible',
-       'fuel.Gasoline', 'fuel.Hybrid', 'fuel.Other')
+list_of_feul= ('Diesel', 'Electric', 'Flexible',
+       'Gasoline', 'Hybrid', 'Other')
 feul= st.selectbox('Select The Fuel type on your car:', list_of_feul)
 
 list_of_eng= ('eng.10 Cylinders', 'eng.12 Cylinders',
@@ -76,6 +69,7 @@ milage = st.text_input("enter distance in mile ('Milage'): ", 0)
 
 states.pop()
 answers = np.concatenate([[year],[milage],manfs,feul_types,tran,engines,states])
+print(len(answers))
 
 
 pred_btn = st.button('Predict Price')
