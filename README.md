@@ -1,9 +1,7 @@
 # Regression-Project
 
 Authors:
-
 Raghad Alarifi
-
 Reef Alturki
 
 ## Predicting Used Car Price using Linear Regression
